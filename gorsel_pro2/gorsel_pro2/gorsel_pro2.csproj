@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7D05551-752A-4189-AB39-622650B3E45E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>gorsel_pro2</RootNamespace>
+    <AssemblyName>gorsel_pro2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DosyaKlasörİslemleri\FrmDirectory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DosyaKlasörİslemleri\FrmDirectory.Designer.cs">
+      <DependentUpon>FrmDirectory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DosyaKlasörİslemleri\FrmDirectoryInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DosyaKlasörİslemleri\FrmDirectoryInfo.Designer.cs">
+      <DependentUpon>FrmDirectoryInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DosyaKlasörİslemleri\FrmFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DosyaKlasörİslemleri\FrmFile.Designer.cs">
+      <DependentUpon>FrmFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DosyaKlasörİslemleri\FrmFileİnfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DosyaKlasörİslemleri\FrmFileİnfo.Designer.cs">
+      <DependentUpon>FrmFileİnfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DosyaKlasörİslemleri\FrmStream.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DosyaKlasörİslemleri\FrmStream.Designer.cs">
+      <DependentUpon>FrmStream.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKontrolleri\FrmDamaTahtasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKontrolleri\FrmDamaTahtasi.Designer.cs">
+      <DependentUpon>FrmDamaTahtasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKontrolleri\FrmDateTimePicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKontrolleri\FrmDateTimePicker.Designer.cs">
+      <DependentUpon>FrmDateTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKontrolleri\FrmMaskedTextBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKontrolleri\FrmMaskedTextBox.Designer.cs">
+      <DependentUpon>FrmMaskedTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKontrolleri\FrmNotifyIcons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKontrolleri\FrmNotifyIcons.Designer.cs">
+      <DependentUpon>FrmNotifyIcons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmkonular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmkonular.Designer.cs">
+      <DependentUpon>Frmkonular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RichTextBoxIslemleri\FrmRichTextBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RichTextBoxIslemleri\FrmRichTextBox.Designer.cs">
+      <DependentUpon>FrmRichTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeriTabanıİşlemleri\FrmVeriTabani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeriTabanıİşlemleri\FrmVeriTabani.Designer.cs">
+      <DependentUpon>FrmVeriTabani.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DosyaKlasörİslemleri\FrmDirectory.resx">
+      <DependentUpon>FrmDirectory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DosyaKlasörİslemleri\FrmDirectoryInfo.resx">
+      <DependentUpon>FrmDirectoryInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DosyaKlasörİslemleri\FrmFile.resx">
+      <DependentUpon>FrmFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DosyaKlasörİslemleri\FrmFileİnfo.resx">
+      <DependentUpon>FrmFileİnfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DosyaKlasörİslemleri\FrmStream.resx">
+      <DependentUpon>FrmStream.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKontrolleri\FrmDamaTahtasi.resx">
+      <DependentUpon>FrmDamaTahtasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKontrolleri\FrmDateTimePicker.resx">
+      <DependentUpon>FrmDateTimePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKontrolleri\FrmMaskedTextBox.resx">
+      <DependentUpon>FrmMaskedTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKontrolleri\FrmNotifyIcons.resx">
+      <DependentUpon>FrmNotifyIcons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmkonular.resx">
+      <DependentUpon>Frmkonular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RichTextBoxIslemleri\FrmRichTextBox.resx">
+      <DependentUpon>FrmRichTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VeriTabanıİşlemleri\FrmVeriTabani.resx">
+      <DependentUpon>FrmVeriTabani.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
